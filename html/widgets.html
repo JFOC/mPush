@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Crown - premium responsive admin template for backend systems</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/spinner/ui.spinner.js"></script>
+<script type="text/javascript" src="js/plugins/spinner/jquery.mousewheel.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/uniform.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/wizard/jquery.form.js"></script>
+<script type="text/javascript" src="js/plugins/wizard/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/plugins/wizard/jquery.form.wizard.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/datatable.js"></script>
+<script type="text/javascript" src="js/plugins/tables/tablesort.min.js"></script>
+<script type="text/javascript" src="js/plugins/tables/resizable.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="js/plugins/calendar.min.js"></script>
+<script type="text/javascript" src="js/plugins/elfinder.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- Left side content -->
+<div id="leftSide">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+    
+    <div class="sidebarSep mt0"></div>
+    
+    <!-- Search widget -->
+    <form action="" class="sidebarSearch">
+        <input type="text" name="search" placeholder="search..." id="ac" />
+        <input type="submit" value="" />
+    </form>
+    
+    <div class="sidebarSep"></div>
+    
+    <!-- Left navigation -->
+    <ul id="menu" class="nav">
+        <li class="dash"><a href="index.html" title=""><span>Dashboard</span></a></li>
+        <li class="charts"><a href="charts.html" title=""><span>Statistics and charts</span></a></li>
+        <li class="forms"><a href="#" title="" class="exp"><span>Forms stuff</span><strong>4</strong></a>
+            <ul class="sub">
+                <li><a href="forms.html" title="">Form elements</a></li>
+                <li><a href="form_validation.html" title="">Validation</a></li>
+                <li><a href="form_editor.html" title="">WYSIWYG and file uploader</a></li>
+                <li class="last"><a href="form_wizards.html" title="">Wizards</a></li>
+            </ul>
+        </li>
+        <li class="ui"><a href="ui_elements.html" title=""><span>Interface elements</span></a></li>
+        <li class="tables"><a href="tables.html" title="" class="exp"><span>Tables</span><strong>3</strong></a>
+            <ul class="sub">
+                <li><a href="table_static.html" title="">Static tables</a></li>
+                <li><a href="table_dynamic.html" title="">Dynamic table</a></li>
+                <li class="last"><a href="table_sortable_resizable.html" title="">Sortable &amp; resizable tables</a></li>
+            </ul>
+        </li>
+        <li class="widgets"><a href="#" title="" class="active exp" id="current"><span>Widgets and grid</span><strong>2</strong></a>
+            <ul class="sub">
+                <li class="this"><a href="widgets.html" title="">Widgets</a></li>
+                <li class="last"><a href="grid.html" title="">Grid</a></li>
+            </ul>
+        </li>
+        <li class="errors"><a href="#" title="" class="exp"><span>Error pages</span><strong>6</strong></a>
+            <ul class="sub">
+                <li><a href="403.html" title="">403 page</a></li>
+                <li><a href="404.html" title="">404 page</a></li>
+                <li><a href="405.html" title="">405 page</a></li>
+                <li><a href="500.html" title="">500 page</a></li>
+                <li><a href="503.html" title="">503 page</a></li>
+                <li class="last"><a href="offline.html" title="">Website is offline</a></li>
+            </ul>
+        </li>
+        <li class="files"><a href="file_manager.html" title=""><span>File manager</span></a></li>
+        <li class="typo"><a href="#" title="" class="exp"><span>Other pages</span><strong>3</strong></a>
+            <ul class="sub">
+                <li><a href="typography.html" title="">Typography</a></li>
+                <li><a href="calendar.html" title="">Calendar</a></li>
+                <li class="last"><a href="gallery.html" title="">Gallery</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <div class="sidebarSep"></div>
+    
+    <!-- Sidebar profile -->
+    <div class="sideProfile">
+    	<a href="#" title="" class="profileFace"><img src="images/user.png" alt="" /></a>
+        <span>Howdy <strong>Eugene!</strong></span>
+        <span>You have <a href="#" title="">2</a> unread mails</span>
+        <div class="clear"></div>
+        <div class="sidedd">
+        	<span class="goUser">Eugene Kopyov</span>
+        	<ul class="sideDropdown">
+            	<li><a href="#" title=""><img src="images/icons/topnav/profile.png" alt="" />My profile</a></li>
+                <li><a href="#" title=""><img src="images/icons/topnav/messages.png" alt="" />My messages</a></li>
+                <li><a href="#" title=""><img src="images/icons/topnav/tasks.png" alt="" />My tasks</a></li>
+                <li><a href="#" title=""><img src="images/icons/topnav/settings.png" alt="" />My settings</a></li>
+                <li><a href="#" title=""><img src="images/icons/topnav/logout.png" alt="" />Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="sidebarSep"></div>
+        
+    <!-- Statistics -->
+    <div class="numStats">
+    	<ul>
+        	<li>1248<span>visitors</span></li>
+            <li>597<span>orders</span></li>
+            <li class="last">981<span>reviews</span></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="sidebarSep"></div>
+    
+    <!-- Icons group widget -->
+    <div class="iconsGroup">
+    	<ul>
+        	<li><a href="#" title="" class="dUsers"></a></li>
+            <li><a href="#" title="" class="dMessages"><span class="groupNum">9</span></a></li>
+            <li><a href="#" title="" class="dMoney"></a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="sidebarSep"></div>
+
+    <!-- General balance widget -->
+    <div class="genBalance">
+        <a href="#" title="" class="amount">
+            <span>General balance:</span>
+            <span class="balanceAmount">$10,900.36</span>
+        </a>
+        <a href="#" title="" class="amChanges">
+            <strong class="sPositive">+0.6%</strong>
+        </a>
+    </div>
+    
+    <!-- Next update progress widget -->
+    <div class="nextUpdate">
+        <ul>
+            <li>Next update in:</li>
+            <li>23 hrs 14 min</li>
+        </ul>
+        <div class="pWrapper"><div class="progressG" title="78%"></div></div>
+    </div>
+    
+    <div class="sidebarSep"></div>
+    
+    <!-- Progress bars -->
+    <div class="pWrapper"><div class="progressO" title="30%"></div></div>
+    <div class="pWrapper mt10"><div class="progressB" title="60%"></div></div>
+    <div class="pWrapper mt10"><div class="progressR tipN" title="90%"></div></div>
+    
+    <div class="sidebarSep"></div>
+    
+    <!-- Sidebar buttons -->
+    <a href="#" title="" class="sButton sBlue"><img src="images/icons/sPlus.png" alt="" /><span>Add new statement</span></a>
+    <a href="#" title="" class="sButton sRed" style="margin-top: 12px;"><img src="images/icons/sPlus.png" alt="" /><span>Add new session</span></a>
+    <a href="#" title="" class="sButton sGreen" style="margin-top: 12px;"><img src="images/icons/sPlus.png" alt="" /><span>Add new invoice</span></a>
+    
+    <div class="sidebarSep"></div>
+    
+    <!-- Rounded stats -->
+    <div class="sRoundStats">
+    	<ul>
+        	<li>Visitors<a href="#" title=""><span class="roundPos">68%</span></a></li>
+            <li>Sales<a href="#" title=""><span class="roundZero">0%</span></a></li>
+            <li>Profit<a href="#" title=""><span class="roundNeg">0.6%</span></a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="nextUpdate">
+        <div class="pWrapper"><div class="progressG" title="78%"></div></div>
+        <ul>
+            <li>Next update in:</li>
+            <li>23 hrs 14 min</li>
+        </ul>
+    </div>
+    
+    <div class="sidebarSep"></div>
+
+</div>
+
+
+<!-- Right side -->
+<div id="rightSide">
+
+    <!-- Top fixed navigation -->
+    <div class="topNav">
+        <div class="wrapper">
+            <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>Howdy, Eugene!</span></div>
+            <div class="userNav">
+                <ul>
+                    <li><a href="#" title=""><img src="images/icons/topnav/profile.png" alt="" /><span>Profile</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/tasks.png" alt="" /><span>Tasks</span></a></li>
+                    <li class="dd"><a title=""><img src="images/icons/topnav/messages.png" alt="" /><span>Messages</span><span class="numberTop">8</span></a>
+                        <ul class="userDropdown">
+                            <li><a href="#" title="" class="sAdd">new message</a></li>
+                            <li><a href="#" title="" class="sInbox">inbox</a></li>
+                            <li><a href="#" title="" class="sOutbox">outbox</a></li>
+                            <li><a href="#" title="" class="sTrash">trash</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
+                    <li><a href="login.html" title=""><img src="images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!-- Responsive header -->
+    <div class="resp">
+        <div class="respHead">
+            <a href="index.html" title=""><img src="images/loginLogo.png" alt="" /></a>
+        </div>
+        
+        <div class="cLine"></div>
+        <div class="smalldd">
+            <span class="goTo"><img src="images/icons/light/frames.png" alt="" />Content widgets</span>
+            <ul class="smallDropdown">
+                <li><a href="index.html" title=""><img src="images/icons/light/home.png" alt="" />Dashboard</a></li>
+                <li><a href="charts.html" title=""><img src="images/icons/light/stats.png" alt="" />Statistics and charts</a></li>
+                <li><a href="#" title="" class="exp"><img src="images/icons/light/pencil.png" alt="" />Forms stuff<strong>4</strong></a>
+                    <ul>
+                        <li><a href="forms.html" title="">Form elements</a></li>
+                        <li><a href="form_validation.html" title="">Validation</a></li>
+                        <li><a href="form_editor.html" title="">WYSIWYG and file uploader</a></li>
+                        <li class="last"><a href="form_wizards.html" title="">Wizards</a></li>
+                    </ul>
+                </li>
+                <li><a href="ui_elements.html" title=""><img src="images/icons/light/users.png" alt="" />Interface elements</a></li>
+                <li><a href="tables.html" title="" class="exp"><img src="images/icons/light/frames.png" alt="" />Tables<strong>3</strong></a>
+                    <ul>
+                        <li><a href="table_static.html" title="">Static tables</a></li>
+                        <li><a href="table_dynamic.html" title="">Dynamic table</a></li>
+                        <li class="last"><a href="table_sortable_resizable.html" title="">Sortable &amp; resizable tables</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="" class="exp"><img src="images/icons/light/fullscreen.png" alt="" />Widgets and grid<strong>2</strong></a>
+                    <ul>
+                        <li><a href="widgets.html" title="">Widgets</a></li>
+                        <li class="last"><a href="grid.html" title="">Grid</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="" class="exp"><img src="images/icons/light/alert.png" alt="" />Error pages<strong>6</strong></a>
+                    <ul class="sub">
+                        <li><a href="403.html" title="">403 page</a></li>
+                        <li><a href="404.html" title="">404 page</a></li>
+                        <li><a href="405.html" title="">405 page</a></li>
+                        <li><a href="500.html" title="">500 page</a></li>
+                        <li><a href="503.html" title="">503 page</a></li>
+                        <li class="last"><a href="offline.html" title="">Website is offline</a></li>
+                    </ul>
+                </li>
+                <li><a href="file_manager.html" title=""><img src="images/icons/light/files.png" alt="" />File manager</a></li>
+                <li><a href="#" title="" class="exp"><img src="images/icons/light/create.png" alt="" />Other pages<strong>3</strong></a>
+                    <ul>
+                        <li><a href="typography.html" title="">Typography</a></li>
+                        <li><a href="calendar.html" title="">Calendar</a></li>
+                        <li class="last"><a href="gallery.html" title="">Gallery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="cLine"></div>
+    </div>
+    
+    <!-- Title area -->
+    <div class="titleArea">
+        <div class="wrapper">
+            <div class="pageTitle">
+                <h5>Content and sidebar widgets</h5>
+                <span>Do your layouts deserve better than Lorem Ipsum.</span>
+            </div>
+            <div class="middleNav">
+                <ul>
+                    <li class="mUser"><a href="#" title=""><span class="users"></span></a>
+                        <ul class="mSub1">
+                            <li><a href="#" title="">Add user</a></li>
+                            <li><a href="#" title="">Statistics</a></li>
+                            <li><a href="#" title="">Orders</a></li>
+                        </ul>
+                    </li>
+                    <li class="mMessages"><a href="#" title=""><span class="messages"></span></a>
+                        <ul class="mSub2">
+                            <li><a href="#" title="">New tickets<span class="numberRight">8</span></a></li>
+                            <li><a href="#" title="">Pending tickets<span class="numberRight">12</span></a></li>
+                            <li><a href="#" title="">Closed tickets</a></li>
+                        </ul>
+                    </li>
+                    <li class="mFiles"><a href="#" title="Or you can use a tooltip" class="tipN"><span class="files"></span></a></li>
+                    <li class="mOrders"><a href="#" title=""><span class="orders"></span><span class="numberMiddle">8</span></a>
+                        <ul class="mSub4">
+                            <li><a href="#" title="">Pending uploads</a></li>
+                            <li><a href="#" title="">Statistics</a></li>
+                            <li><a href="#" title="">Trash</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <div class="line"></div>
+    
+    <!-- Page statistics area -->
+    <div class="statsRow">
+        <div class="wrapper">
+        	<div class="controlB">
+            	<ul>
+                	<li><a href="#" title=""><img src="images/icons/control/32/plus.png" alt="" /><span>Add new session</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/control/32/database.png" alt="" /><span>New DB entry</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/control/32/hire-me.png" alt="" /><span>Add new user</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/control/32/statistics.png" alt="" /><span>Check statistics</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/control/32/comment.png" alt="" /><span>Review comments</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/control/32/order-149.png" alt="" /><span>Check orders</span></a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="line"></div>
+    
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+    
+        <!-- Note -->
+        <div class="nNote nInformation hideit">
+            <p><strong>NOTE: </strong>These are predefined content and sidebar widgets. Also please check content grid page</p>
+        </div>
+        
+        <!-- Widgets -->
+        <div class="widgets">
+            <div class="oneTwo">
+            
+                <!-- Invoices stats widget -->
+                <div class="widget">
+                    <div class="title"><img src="images/icons/dark/money2.png" alt="" class="titleIcon" /><h6>Invoices statistics</h6></div>
+                    <div class="wInvoice">
+                        <ul>
+                            <li><h4 class="green">$63,456</h4><span>amount paid</span></li>
+                            <li><h4 class="blue">$218,518</h4><span>in queue</span></li>
+                            <li><h4 class="red">$16,542</h4><span>total taxes</span></li>
+                        </ul>
+                        <div class="content">
+                            <div class="contentProgress"><div class="barG tipN" title="61%" id="bar5"></div></div>
+                            <ul class="ruler">
+                                <li>0</li>
+                                <li class="textC">50%</li>
+                                <li class="textR">100%</li>
+                            </ul>
+                            <div class="clear"></div>
+                            <div class="invButtons">
+                                <a href="#" title="" class="bFirst button basic"><img src="images/icons/dark/photos.png" class="icon" alt="" /><span>Add new invoice</span></a>
+                                <a href="#" title="" class="bLast button basic"><img src="images/icons/dark/pdfDoc.png" class="icon" alt="" /><span>Generate report</span></a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            
+                <!-- Website stats widget -->
+                <div class="widget">
+                    <div class="title"><img src="images/icons/dark/stats.png" alt="" class="titleIcon" /><h6>Website statistics</h6></div>
+                    <table cellpadding="0" cellspacing="0" width="100%" class="sTable">
+                        <thead>
+                            <tr>
+                                <td width="80">Amount</td>
+                                <td>Description</td>
+                                <td width="80">Changes</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center"><a href="#" title="" class="webStatsLink">980</a></td>
+                                <td>returned visitors</td>
+                                <td><span class="statsPlus">0.32%</span></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="#" title="" class="webStatsLink">1545</a></td>
+                                <td>new registrations</td>
+                                <td><span class="statsMinus">82.3%</span></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="#" title="" class="webStatsLink">457</a></td>
+                                <td>new affiliates registrations</td>
+                                <td><span class="statsPlus">100%</span></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="#" title="" class="webStatsLink">9543</a></td>
+                                <td>new visitors</td>
+                                <td><span class="statsPlus">4.99%</span></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="#" title="" class="webStatsLink">354</a></td>
+                                <td>new pending comments</td>
+                                <td><span class="statsMinus">9.67%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+                
+            	<!-- Collapsible. Opened by default -->
+                <div class="toggle">
+                    <div class="title opened" id="opened"><img src="images/icons/dark/check.png" alt="" class="titleIcon tipS" title="Sample tooltip" /><h6>Collapsible. Opened by default</h6></div>
+                    <div class="body">This one is opened by default</div>
+                </div>
+                <div class="clear"></div>
+                
+            	<!-- Collapsible. Closed by default -->
+                <div class="toggle">
+                    <div class="title closed"><img src="images/icons/dark/close.png" alt="" class="titleIcon tipS" title="Sample tooltip" /><h6>Collapsible. Closed by default</h6></div>
+                    <div class="body">This one is closed by default</div>
+                </div>
+                <div class="clear"></div>
+                
+                <!-- Partners list widget -->
+                <div class="widget">
+                    <div class="title"><img src="images/icons/dark/users.png" alt="" class="titleIcon" /><h6>Partners list</h6></div>
+                    <ul class="partners">
+                        <li>
+                            <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                            <div class="pInfo">
+                                <a href="#" title=""><strong>Dave Armstrong</strong></a>
+                                <i>Creative director at Google Inc. Zurich</i>	
+                            </div>
+                            <div class="pLinks">
+                                <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                                <div class="pInfo">
+                                <a href="#" title=""><strong>Nora McDonald</strong></a>
+                                <i>Lead developer, Alaska</i>	
+                            </div>
+                            <div class="pLinks">
+                                <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                            <div class="pInfo">
+                                <a href="#" title=""><strong>Natalie Zimmerman</strong></a>
+                                <i>Actually it's a guy. Yeah, unexpected</i>	
+                            </div>
+                            <div class="pLinks">
+                                <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                            <div class="pInfo">
+                                <a href="#" title=""><strong>Maria Paradeux</strong></a>
+                                <i>Very hot secretary, Playboy rockstar</i>	
+                            </div>
+                            <div class="pLinks">
+                                <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                </div>
+            
+                <!-- Latest update widget -->
+                <div class="widget">
+                    <div class="title"><img src="images/icons/dark/refresh4.png" alt="" class="titleIcon" /><h6>Latest updates</h6></div>
+                    
+                    <div class="updates">
+                    	<div class="newUpdate">
+                            <div class="uDone">
+                                <a href="#" title=""><strong>A new server is on the board!</strong></a>
+                                <span>We've just set up a new server. Our gurus ...</span>
+                            </div>
+                            <div class="uDate"><span class="uDay">08</span>feb</div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    	<div class="newUpdate">
+                            <span class="uAlert">
+                                <a href="#" title=""><strong>[ URGENT ] ex.ua was closed by government</strong></a>
+                                <span>But already everything was solved. It will ...</span>
+                            </span>
+                            <span class="uDate"><span class="uDay">08</span>feb</span>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    	<div class="newUpdate">
+                            <span class="uDone">
+                                <a href="#" title=""><strong>The goal was reached!</strong></a>
+                                <span>We just passed 1000 sales! Congrats to all</span>
+                            </span>
+                            <span class="uDate"><span class="uDay">07</span>feb</span>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    	<div class="newUpdate">
+                            <span class="uNotice">
+                                <a href="#" title=""><strong>Meat a new team member - Don Corleone</strong></a>
+                                <span>Very dyplomatic and flexible sales manager</span>
+                            </span>
+                            <span class="uDate"><span class="uDay">06</span>feb</span>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- widget with fixed height and custom scroll -->
+                <div class="widget">
+                    <div class="title"><img src="images/icons/dark/transfer.png" alt="" class="titleIcon" /><h6>Partners list (widget with fixed height)</h6></div>
+                    <div class="scroll">
+                        <ul class="partners">
+                            <li>
+                                <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                                <div class="pInfo">
+                                    <a href="#" title=""><strong>Dave Armstrong</strong></a>
+                                    <i>Creative director at Google Inc. Zurich</i>	
+                                </div>
+                                <div class="pLinks">
+                                    <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                    <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                                    <div class="pInfo">
+                                    <a href="#" title=""><strong>Nora McDonald</strong></a>
+                                    <i>Lead developer, Alaska</i>	
+                                </div>
+                                <div class="pLinks">
+                                    <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                    <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                                <div class="pInfo">
+                                    <a href="#" title=""><strong>Natalie Zimmerman</strong></a>
+                                    <i>Actually it's a guy. Yeah, unexpected</i>	
+                                </div>
+                                <div class="pLinks">
+                                    <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                    <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <a href="#" title="" class="floatL"><img src="images/user.png" alt="" /></a>
+                                <div class="pInfo">
+                                    <a href="#" title=""><strong>Maria Paradeux</strong></a>
+                                    <i>Very hot secretary, Playboy rockstar</i>	
+                                </div>
+                                <div class="pLinks">
+                                    <a href="#" title="Direct call" class="tipW"><img src="images/icons/pSkype.png" alt="" /></a>
+                                    <a href="#" title="Send an email" class="tipW"><img src="images/icons/pEmail.png" alt="" /></a>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                              
+            </div>
+        
+        	<!-- 2 columns widgets -->
+            <div class="oneTwo">
+            
+            	<!-- Big buttons as widgets -->
+            	<div class="oneTwo"><a href="#" title="" class="wContentButton bluewB">Button as a widget</a></div>
+                <div class="oneTwo"><a href="#" title="" class="wContentButton redwB">Button as a widget</a></div>
+                <div class="clear"></div>
+            
+                <!-- Search -->
+                <div class="searchWidget">
+                    <form action="">
+                        <input type="text" name="search" placeholder="Enter search text..." />
+                        <input type="submit" name="find" value="" />
+                    </form>
+                </div>
+            
+                <!-- Purchase info widget -->
+                <div class="widget">
+                    <div class="title">
+                    	<img src="images/icons/dark/money.png" alt="" class="titleIcon" />
+                        <h6>Purchase info</h6>
+                        <div class="topIcons">
+                            <a href="#" class="tipS" title="Download statement"><img src="images/icons/downloadTop.png" alt="" /></a>
+                            <a href="#" class="tipS" title="Print invoice"><img src="images/icons/printTop.png" alt="" /></a>
+                            <a href="#" class="tipS" title="Edit"><img src="images/icons/editTop.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="newOrder">
+                        <div class="userRow">
+                            <a href="#" title=""><img src="images/user.png" alt="" class="floatL" /></a>
+                            <ul class="leftList">
+                                <li><a href="#" title=""><strong>Julia Maria Shine</strong></a></li>
+                                <li>Order status:</li>
+                            </ul>
+                            <ul class="rightList">
+                                <li><a href="#" title=""> <strong>#2112</strong></a></li>
+                                <li class="orderIcons"><span class="oUnfinished"></span><span class="oShipped tipN" title="Shipped on Feb 2nd, 2012"></span><span class="oPaid tipN" title="Paid on Feb 1st, 2012"></span></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="cLine"></div>
+                        
+                        <div class="orderRow">
+                            <ul class="leftList">
+                                <li>Date and time:</li>
+                                <li>Subtotal amount:</li>
+                                <li>Taxes</li>
+                            </ul>
+                            <ul class="rightList">
+                                <li><strong>Jan 31, 2012</strong> |  12:51</li>
+                                <li><strong class="green">$5,514.36</strong></li>
+                                <li><strong class="orange">- $1,158.54</strong></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <div class="cLine"></div>
+                        <div class="totalAmount"><h6 class="floatL blue">Total:</h6><h6 class="floatR blue">$12,157.99</h6><div class="clear"></div></div>
+                    </div>
+                </div>                
+        
+                <!-- Toggles group -->
+                <div class="toggle">
+                    <div class="title opened" id="toggleOpened"><img src="images/icons/dark/link2.png" alt="" class="titleIcon"/><h6>Toggles group. Active</h6><div class="clear"></div></div>
+                    <div class="body">This widget is opened by default. Works in case of adding id="opened" to the widget head</div>
+                    
+                    <div class="title closed"><img src="images/icons/dark/help.png" alt="" class="titleIcon" /><h6>Toggles group. Inactive</h6></div>
+                    <div class="body">This widget is closed by default.</div>
+                    
+                    <div class="title closed"><img src="images/icons/dark/key.png" alt="" class="titleIcon" /><h6>Toggles group. Inactive</h6></div>
+                    <div class="body">This widget is closed by default.</div>
+                </div>
+                <div class="clear"></div>
+                
+            	<!-- My tasks table widget -->
+                <div class="widget">
+                    <div class="title"><img src="images/icons/dark/timer.png" alt="" class="titleIcon" /><h6>My tasks</h6><div class="num"><a href="#" class="blueNum">+245</a></div></div>
+                    <table cellpadding="0" cellspacing="0" width="100%" class="sTable taskWidget">
+                        <thead>
+                            <tr>
+                                <td>Description</td>
+                                <td width="100">Status</td>
+                                <td width="60">Acts</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="taskPr"><a href="#" title="">Finish design</a></td>
+                                <td><span class="green f11">in progress</span></td>
+                                <td class="actBtns"><a href="#" title="Update" class="tipS"><img src="images/icons/edit.png" alt="" /></a><a href="#" title="Remove" class="tipS"><img src="images/icons/remove.png" alt="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td class="taskP"><a href="#" title="">Get HTML done</a></td>
+                                <td><span class="lGrey f11">pending</span></td>
+                                <td class="actBtns"><a href="#" title="Update" class="tipS"><img src="images/icons/edit.png" alt="" /></a><a href="#" title="Remove" class="tipS"><img src="images/icons/remove.png" alt="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td class="taskP"><a href="#" title="">Connect jQuery stuff</a></td>
+                                <td><span class="lGrey f11">pending</span></td>
+                                <td class="actBtns"><a href="#" title="Update" class="tipS"><img src="images/icons/edit.png" alt="" /></a><a href="#" title="Remove" class="tipS"><img src="images/icons/remove.png" alt="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td class="taskD"><a href="#" title="">Start beta testing</a></td>
+                                <td><span class="red f11">done</span></td>
+                                <td class="actBtns"><a href="#" title="Update" class="tipS"><img src="images/icons/edit.png" alt="" /></a><a href="#" title="Remove" class="tipS"><img src="images/icons/remove.png" alt="" /></a></td>
+                            </tr>
+                        </tbody>
+                    </table>            
+                </div>
+        		
+                <!-- New users widget -->
+                <div class="widget">
+                    <div class="title"><img src="images/icons/dark/add.png" alt="" class="titleIcon" /><h6>New users (another divider)</h6></div>
+                    <div class="wUserInfo">
+                        <a href="#" title="" class="wUserPic"><img src="images/user.png" alt="" /></a>
+                        <ul class="leftList">
+                            <li><a href="#" title=""><strong>Eugene Kopyov</strong></a></li>
+                            <li><a href="#" title="">eugene@kopyov.com</a></li>
+                        </ul>
+                        <ul class="rightList">
+                            <li><a href="#" class="green"><strong>$12,248.21</strong></a></li>
+                            <li><a href="#" class="red">12 purchases</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="cLine"></div>
+                    
+                    <div class="wUserInfo">
+                        <a href="#" title="" class="wUserPic"><img src="images/user.png" alt="" /></a>
+                        <ul class="leftList">
+                            <li><a href="#" title=""><strong>Dora Dow</strong></a></li>
+                            <li><a href="#" title="">dora@dow.com</a></li>
+                        </ul>
+                        <ul class="rightList">
+                            <li><a href="#" class="green"><strong>$4,048</strong></a></li>
+                            <li><a href="#" class="red">96 purchases</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="cLine"></div>
+                    
+                    <div class="wUserInfo">
+                        <a href="#" title="" class="wUserPic"><img src="images/user.png" alt="" /></a>
+                        <ul class="leftList">
+                            <li><a href="#" title=""><strong>Liam Paterson</strong></a></li>
+                            <li><a href="#" title="">liam@paterson.com</a></li>
+                        </ul>
+                        <ul class="rightList">
+                            <li><a href="#" class="green"><strong>$94,127.20</strong></a></li>
+                            <li><a href="#" class="red">128 purchases</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="cLine"></div>
+                    
+                    <div class="wUserInfo">
+                        <a href="#" title="" class="wUserPic"><img src="images/user.png" alt="" /></a>
+                        <ul class="leftList">
+                            <li><a href="#" title=""><strong>Steve Downey</strong></a></li>
+                            <li><a href="#" title="">steve@downey.com</a></li>
+                        </ul>
+                        <ul class="rightList">
+                            <li><a href="#" class="green"><strong>$2,483.02</strong></a></li>
+                            <li><a href="#" class="red">0 purchases</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+                <!-- Accordion -->
+                <div class="toggle acc">      
+                  <div class="title"><img src="images/icons/dark/check.png" alt="" class="titleIcon" /><h6>Accordion menu. Active</h6></div>
+                    <div class="menu_body">
+                        This is an accordion. This one is opened by default
+                    </div>
+                  <div class="title"><img src="images/icons/dark/tags.png" alt="" class="titleIcon" /><h6>Accordion menu. Inactive</h6></div>
+                    <div class="menu_body">
+                        Now this one is active
+                    </div>
+                  <div class="title"><img src="images/icons/dark/twitter2.png" alt="" class="titleIcon" /><h6>Accordion menu. Inactive</h6></div>
+                    <div class="menu_body">
+                        And now this one...
+                   </div>
+                </div>    
+                
+                <!-- Widget with ajax loader -->
+                <div class="widget">
+                    <div class="title">
+                        <img src="images/icons/dark/loading.png" alt="" class="titleIcon" />
+                        <h6>Widget with AJAX loader</h6>
+                        <div class="loader"><img src="images/loaders/loader.gif" alt="" /></div>
+                    </div>
+                    <div class="body">Image on the left side can be used for any widget in any size. Just insert an image before <strong>&lt;h6&gt; &lt;&frasl;h6&gt;</strong> tags and add <strong>titleIcon</strong> class</div>
+                </div> 
+                
+                <!-- Tabs -->
+                <div class="widget">       
+                    <ul class="tabs">
+                        <li><a href="#tab1">Tab active</a></li>
+                        <li><a href="#tab2">Tab inactive</a></li>
+                    </ul>
+                    
+                    <div class="tab_container">
+                        <div id="tab1" class="tab_content">This tab is active</div>
+                        <div id="tab2" class="tab_content"> This tab is active now</div>
+                    </div>	
+                    <div class="clear"></div>		 
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    	
+    </div>
+    
+    <!-- Footer line -->
+    <div id="footer">
+        <div class="wrapper">As usually all rights reserved. And as usually brought to you by <a href="http://themeforest.net/user/Kopyov?ref=kopyov" title="">Eugene Kopyov</a></div>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>
