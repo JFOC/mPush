@@ -68,7 +68,7 @@
 
 	  <!-- Load all Google JS libraries -->
 	  <script src="https://www.google.com/jsapi"></script>
-	  <script src="gadash-1.0.js"></script>
+	  <script src="js/gadash-1.0.js"></script>
 	  <script src="https://apis.google.com/js/client.js?onload=gadashInit"></script>
 	  <script>
 	    // Configure these parameters before you start.
